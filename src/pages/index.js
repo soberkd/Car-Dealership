@@ -8,19 +8,19 @@ import * as styles from "../components/index.module.css"
 
 const links = [
   {
-    text: "Tutorial",
+    text: "New",
     url: "https://www.gatsbyjs.com/docs/tutorial",
     description:
       "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
   },
   {
-    text: "Examples",
+    text: "Used",
     url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
     description:
       "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
   },
   {
-    text: "Plugin Library",
+    text: "Other services",
     url: "https://www.gatsbyjs.com/plugins",
     description:
       "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
@@ -34,6 +34,9 @@ const links = [
 ]
 
 const samplePageLinks = [
+  { text: "Home", url: "using-typescript" },
+  { text: "Services", url: "using-ssr" },
+  { text: "Blog", url: "using-dsg" },
   {
     text: "Page 2",
     url: "page-2",
@@ -41,9 +44,7 @@ const samplePageLinks = [
     description:
       "A simple example of linking to another page within a Gatsby site",
   },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
+  
 ]
 
 const moreLinks = [
@@ -82,7 +83,7 @@ const IndexPage = () => (
         style={{ marginBottom: `var(--space-3)` }}
       />
       <h1>
-        Welcome to <b>Gatsby!</b>
+        Welcome to <b>AutoCar_KO!</b>
       </h1>
       <p className={styles.intro}>
         <b>Example pages:</b>{" "}
@@ -93,7 +94,7 @@ const IndexPage = () => (
           </React.Fragment>
         ))}
         <br />
-        Edit <code>src/pages/index.js</code> to update this page.
+        We are now up to date
       </p>
     </div>
     <ul className={styles.list}>
