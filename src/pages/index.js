@@ -2,9 +2,11 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout"
+
 import Seo from "../components/seo"
+import Navbar from "../components/Navbar"
 import * as styles from "../components/index.module.css"
+import Layout from "../components/layout"
 
 const links = [
   {
@@ -61,52 +63,59 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 
 const IndexPage = () => (
   <Layout>
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
-        Welcome to <b>AutoCar_KO!</b>
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        We are now up to date
-      </p>
+    <div>
+      <h1>Here we are in our car dealership</h1>
+      <p>proceding with moderation</p>
     </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
   </Layout>
 )
+  // <Layout
+  //   <div className={styles.textCenter}>
+  //     <Navbar/>
+  //     <StaticImage
+  //       src="../images/example.png"
+  //       loading="eager"
+  //       width={64}
+  //       quality={95}
+  //       formats={["auto", "webp", "avif"]}
+  //       alt=""
+  //       style={{ marginBottom: `var(--space-3)` }}
+  //     />
+  //     <h1>
+  //       Welcome to <b>AutoCar_KO!</b>
+  //     </h1>
+  //     <p className={styles.intro}>
+  //       <b>Example pages:</b>{" "}
+  //       {samplePageLinks.map((link, i) => (
+  //         <React.Fragment key={link.url}>
+  //           <Link to={link.url}>{link.text}</Link>
+  //           {i !== samplePageLinks.length - 1 && <> · </>}
+  //         </React.Fragment>
+  //       ))}
+  //       <br />
+  //       We are now up to date
+  //     </p>
+  //   </div>
+  //   <ul className={styles.list}>
+  //     {links.map(link => (
+  //       <li key={link.url} className={styles.listItem}>
+  //         <a
+  //           className={styles.listItemLink}
+  //           href={`${link.url}${utmParameters}`}
+  //         >
+  //           {link.text} ↗
+  //         </a>
+  //         <p className={styles.listItemDescription}>{link.description}</p>
+  //       </li>
+  //     ))}
+  //   </ul>
+  //   {moreLinks.map((link, i) => (
+  //     <React.Fragment key={link.url}>
+  //       <a href={`${link.url}${utmParameters}`}>{link.text}</a>
+  //       {i !== moreLinks.length - 1 && <> · </>}
+  //     </React.Fragment>
+  //   ))}
+  // </Layout>
 
 /**
  * Head export to define metadata for the page
