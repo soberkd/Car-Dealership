@@ -64,9 +64,26 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 const IndexPage = () => (
   <Layout>
     <div>
-      <h1>Here we are in our car dealership</h1>
-      <p>proceding with moderation</p>
+      <h2>AutoCar_KO</h2>
+      <h3>Stop dreaming, Start driving</h3>
+      <p>Welcome to Carauto, your premier car dealership in the city!</p><p> We are dedicated to providing our 
+        customers with a wide selection of high-quality vehicles to choose from, including sedans, SUVs, 
+        trucks, and more. Our friendly and knowledgeable sales team is here to assist you in finding 
+        the perfect car to meet your needs and budget. We also offer financing options and maintenance 
+        services to help you focus on driving.</p>
     </div>
+    <section>
+      <h2>What type of Car are you looking for?</h2>
+      <ul>
+        <li>Mercedes</li>
+        <li>Toyota</li>
+        <li>VW</li>
+        <li>Audi</li>
+        <li>Nissan</li>
+        <li>Mazda</li>
+        <li>Subaru</li>
+      </ul>
+    </section>
   </Layout>
 )
   // <Layout
